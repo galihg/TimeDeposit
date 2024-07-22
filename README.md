@@ -28,7 +28,8 @@ This project uses `Cocoapods` as its dependency management
 
 ## How To Run: <a name="How-To-Integrate"></a>
 1. Run `pod install` on terminal on the root folder of the project
-2. Build and run the project using the `xcworkspace` file
+2. You may encounters erros/warnings on some dependencies (`PKHUD`, `DLRadioButton`), set minimum deployment target for those modules to iOS 12.0 version
+3. Build and run the project using the `xcworkspace` file
 
 
 ### Adding Dependencies: <a name="Adding-Dependencies"></a>
