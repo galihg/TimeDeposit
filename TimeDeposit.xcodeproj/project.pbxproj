@@ -1,0 +1,1011 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F2FC966E014752A4A4C8F22 /* Pods_TimeDepositTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E130DDB2746B35407FB2CEF /* Pods_TimeDepositTests.framework */; };
+		759AA6F92C48F3CD00E57BD2 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759AA6F82C48F3CD00E57BD2 /* UIImage+Extension.swift */; };
+		759AA6FB2C492B6E00E57BD2 /* PaymentCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759AA6FA2C492B6E00E57BD2 /* PaymentCoordinator.swift */; };
+		75BF9CA42C44BD7300971BCD /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BF9CA32C44BD7300971BCD /* String+Extension.swift */; };
+		75C155E52C43C75000010E44 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C155E42C43C75000010E44 /* UIColor+Extension.swift */; };
+		75C155E82C43C9E400010E44 /* ViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C155E72C43C9E400010E44 /* ViewHelper.swift */; };
+		75C155EA2C43CC9F00010E44 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C155E92C43CC9F00010E44 /* ProductCell.swift */; };
+		75C3F6B62C45668100E17E88 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3F6B52C45668100E17E88 /* Date+Extension.swift */; };
+		75C3F6B82C4589BE00E17E88 /* Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3F6B72C4589BE00E17E88 /* Sheet.swift */; };
+		75C3F6BA2C45912000E17E88 /* RolloverOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3F6B92C45912000E17E88 /* RolloverOptionCell.swift */; };
+		75C3F6BE2C47755D00E17E88 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3F6BD2C47755D00E17E88 /* Array+Extension.swift */; };
+		75C903C02C4291D600EF43A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C903BF2C4291D600EF43A8 /* AppDelegate.swift */; };
+		75C903C22C4291D600EF43A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C903C12C4291D600EF43A8 /* SceneDelegate.swift */; };
+		75C903C42C4291D600EF43A8 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C903C32C4291D600EF43A8 /* ProductViewController.swift */; };
+		75C903C92C4291D800EF43A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C903C82C4291D800EF43A8 /* Assets.xcassets */; };
+		75C903D72C4291D800EF43A8 /* TimeDepositTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C903D62C4291D800EF43A8 /* TimeDepositTests.swift */; };
+		75C903E12C4291D800EF43A8 /* TimeDepositUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C903E02C4291D800EF43A8 /* TimeDepositUITests.swift */; };
+		75C903E32C4291D800EF43A8 /* TimeDepositUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C903E22C4291D800EF43A8 /* TimeDepositUITestsLaunchTests.swift */; };
+		75C903F12C42948000EF43A8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C903F02C42948000EF43A8 /* Router.swift */; };
+		75C903F32C42948A00EF43A8 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C903F22C42948A00EF43A8 /* Coordinator.swift */; };
+		75C903F52C42949E00EF43A8 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C903F42C42949E00EF43A8 /* Screen.swift */; };
+		75C903F92C42956D00EF43A8 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C903F82C42956D00EF43A8 /* ProductViewModel.swift */; };
+		75C903FC2C42967700EF43A8 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C903FB2C42967700EF43A8 /* UIView+Extension.swift */; };
+		75C904182C4296EE00EF43A8 /* APIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C9040E2C4296EE00EF43A8 /* APIClientProtocol.swift */; };
+		75C904192C4296EE00EF43A8 /* APIDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C9040F2C4296EE00EF43A8 /* APIDataProtocol.swift */; };
+		75C9041A2C4296EE00EF43A8 /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C904102C4296EE00EF43A8 /* NetworkManagerProtocol.swift */; };
+		75C9041B2C4296EE00EF43A8 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C904122C4296EE00EF43A8 /* NetworkConfig.swift */; };
+		75C9041C2C4296EE00EF43A8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C904142C4296EE00EF43A8 /* APIClient.swift */; };
+		75C9041D2C4296EE00EF43A8 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C904152C4296EE00EF43A8 /* NetworkError.swift */; };
+		75C9041E2C4296EE00EF43A8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C904162C4296EE00EF43A8 /* NetworkManager.swift */; };
+		75C904202C42974600EF43A8 /* ProductAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C9041F2C42974600EF43A8 /* ProductAPI.swift */; };
+		75C904242C42991400EF43A8 /* ProductCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C904232C42991400EF43A8 /* ProductCoordinator.swift */; };
+		75C904262C429A5000EF43A8 /* ProductScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C904252C429A5000EF43A8 /* ProductScreen.swift */; };
+		75C904292C429B3C00EF43A8 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C904282C429B3C00EF43A8 /* Product.swift */; };
+		75C9042B2C429BF100EF43A8 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C9042A2C429BF100EF43A8 /* ProductService.swift */; };
+		75C9042E2C42FCC200EF43A8 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C9042D2C42FCC200EF43A8 /* PaymentViewController.swift */; };
+		75C904302C42FE5900EF43A8 /* ProductDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C9042F2C42FE5900EF43A8 /* ProductDetailScreen.swift */; };
+		75C904322C4300DC00EF43A8 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C904312C4300DC00EF43A8 /* ProductDetailViewModel.swift */; };
+		75C904342C4304D700EF43A8 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C904332C4304D700EF43A8 /* ProductDetailViewController.swift */; };
+		75C904362C43065500EF43A8 /* PaymentScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C904352C43065500EF43A8 /* PaymentScreen.swift */; };
+		75CC41892C4BE56000FC3D91 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CC41882C4BE56000FC3D91 /* Toast.swift */; };
+		75CC418B2C4BEFA100FC3D91 /* AmountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CC418A2C4BEFA100FC3D91 /* AmountCell.swift */; };
+		75EBCDA82C443F8D0052D5F4 /* SeparatorLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBCDA72C443F8D0052D5F4 /* SeparatorLine.swift */; };
+		75F8D4912C4D984100524994 /* PaymentOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8D4902C4D984100524994 /* PaymentOptionCell.swift */; };
+		75F8D4932C4DAC3900524994 /* PaymentSectionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8D4922C4DAC3900524994 /* PaymentSectionHeaderCell.swift */; };
+		A8698682E88B8A703E9B6300 /* Pods_TimeDeposit_TimeDepositUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1DD3B1479A3BFF5CECD00F /* Pods_TimeDeposit_TimeDepositUITests.framework */; };
+		C00E68852F7B447DF4282DCF /* Pods_TimeDeposit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD96FF8FB2F229650622AAF8 /* Pods_TimeDeposit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75C903D32C4291D800EF43A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75C903B42C4291D600EF43A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75C903BB2C4291D600EF43A8;
+			remoteInfo = TimeDeposit;
+		};
+		75C903DD2C4291D800EF43A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75C903B42C4291D600EF43A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75C903BB2C4291D600EF43A8;
+			remoteInfo = TimeDeposit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07EA4C5540FE149A69C7FB5E /* Pods-TimeDepositTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeDepositTests.release.xcconfig"; path = "Target Support Files/Pods-TimeDepositTests/Pods-TimeDepositTests.release.xcconfig"; sourceTree = "<group>"; };
+		4E130DDB2746B35407FB2CEF /* Pods_TimeDepositTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeDepositTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		574EB428AD92F9E5DD6C845D /* Pods-TimeDeposit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeDeposit.debug.xcconfig"; path = "Target Support Files/Pods-TimeDeposit/Pods-TimeDeposit.debug.xcconfig"; sourceTree = "<group>"; };
+		65975BBD14B938B6080C2DC1 /* Pods-TimeDeposit-TimeDepositUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeDeposit-TimeDepositUITests.debug.xcconfig"; path = "Target Support Files/Pods-TimeDeposit-TimeDepositUITests/Pods-TimeDeposit-TimeDepositUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		759AA6F82C48F3CD00E57BD2 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		759AA6FA2C492B6E00E57BD2 /* PaymentCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCoordinator.swift; sourceTree = "<group>"; };
+		75BF9CA32C44BD7300971BCD /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		75C155E42C43C75000010E44 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		75C155E72C43C9E400010E44 /* ViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHelper.swift; sourceTree = "<group>"; };
+		75C155E92C43CC9F00010E44 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		75C3F6B52C45668100E17E88 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		75C3F6B72C4589BE00E17E88 /* Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheet.swift; sourceTree = "<group>"; };
+		75C3F6B92C45912000E17E88 /* RolloverOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolloverOptionCell.swift; sourceTree = "<group>"; };
+		75C3F6BD2C47755D00E17E88 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		75C903BC2C4291D600EF43A8 /* TimeDeposit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeDeposit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C903BF2C4291D600EF43A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75C903C12C4291D600EF43A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		75C903C32C4291D600EF43A8 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		75C903C82C4291D800EF43A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75C903CD2C4291D800EF43A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75C903D22C4291D800EF43A8 /* TimeDepositTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeDepositTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C903D62C4291D800EF43A8 /* TimeDepositTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDepositTests.swift; sourceTree = "<group>"; };
+		75C903DC2C4291D800EF43A8 /* TimeDepositUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeDepositUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75C903E02C4291D800EF43A8 /* TimeDepositUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDepositUITests.swift; sourceTree = "<group>"; };
+		75C903E22C4291D800EF43A8 /* TimeDepositUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDepositUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		75C903F02C42948000EF43A8 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		75C903F22C42948A00EF43A8 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		75C903F42C42949E00EF43A8 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		75C903F82C42956D00EF43A8 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		75C903FB2C42967700EF43A8 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		75C9040E2C4296EE00EF43A8 /* APIClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientProtocol.swift; sourceTree = "<group>"; };
+		75C9040F2C4296EE00EF43A8 /* APIDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDataProtocol.swift; sourceTree = "<group>"; };
+		75C904102C4296EE00EF43A8 /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		75C904122C4296EE00EF43A8 /* NetworkConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		75C904142C4296EE00EF43A8 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		75C904152C4296EE00EF43A8 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		75C904162C4296EE00EF43A8 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		75C9041F2C42974600EF43A8 /* ProductAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductAPI.swift; sourceTree = "<group>"; };
+		75C904232C42991400EF43A8 /* ProductCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCoordinator.swift; sourceTree = "<group>"; };
+		75C904252C429A5000EF43A8 /* ProductScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductScreen.swift; sourceTree = "<group>"; };
+		75C904282C429B3C00EF43A8 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		75C9042A2C429BF100EF43A8 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		75C9042D2C42FCC200EF43A8 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		75C9042F2C42FE5900EF43A8 /* ProductDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailScreen.swift; sourceTree = "<group>"; };
+		75C904312C4300DC00EF43A8 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		75C904332C4304D700EF43A8 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		75C904352C43065500EF43A8 /* PaymentScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentScreen.swift; sourceTree = "<group>"; };
+		75CC41882C4BE56000FC3D91 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		75CC418A2C4BEFA100FC3D91 /* AmountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountCell.swift; sourceTree = "<group>"; };
+		75EBCDA72C443F8D0052D5F4 /* SeparatorLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorLine.swift; sourceTree = "<group>"; };
+		75F8D4902C4D984100524994 /* PaymentOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOptionCell.swift; sourceTree = "<group>"; };
+		75F8D4922C4DAC3900524994 /* PaymentSectionHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSectionHeaderCell.swift; sourceTree = "<group>"; };
+		9773BE57C7CC84528BEBEF3B /* Pods-TimeDeposit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeDeposit.release.xcconfig"; path = "Target Support Files/Pods-TimeDeposit/Pods-TimeDeposit.release.xcconfig"; sourceTree = "<group>"; };
+		ACE460CF18B757AAFF022C72 /* Pods-TimeDepositTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeDepositTests.debug.xcconfig"; path = "Target Support Files/Pods-TimeDepositTests/Pods-TimeDepositTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF7920F232E53ADFF9D9225E /* Pods-TimeDeposit-TimeDepositUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeDeposit-TimeDepositUITests.release.xcconfig"; path = "Target Support Files/Pods-TimeDeposit-TimeDepositUITests/Pods-TimeDeposit-TimeDepositUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BD96FF8FB2F229650622AAF8 /* Pods_TimeDeposit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeDeposit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE1DD3B1479A3BFF5CECD00F /* Pods_TimeDeposit_TimeDepositUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeDeposit_TimeDepositUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75C903B92C4291D600EF43A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C00E68852F7B447DF4282DCF /* Pods_TimeDeposit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C903CF2C4291D800EF43A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F2FC966E014752A4A4C8F22 /* Pods_TimeDepositTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C903D92C4291D800EF43A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8698682E88B8A703E9B6300 /* Pods_TimeDeposit_TimeDepositUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		183D5848BAA138CCA77A64EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD96FF8FB2F229650622AAF8 /* Pods_TimeDeposit.framework */,
+				EE1DD3B1479A3BFF5CECD00F /* Pods_TimeDeposit_TimeDepositUITests.framework */,
+				4E130DDB2746B35407FB2CEF /* Pods_TimeDepositTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75C155E62C43C9D100010E44 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				75C155E72C43C9E400010E44 /* ViewHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		75C903B32C4291D600EF43A8 = {
+			isa = PBXGroup;
+			children = (
+				75C903BE2C4291D600EF43A8 /* TimeDeposit */,
+				75C903D52C4291D800EF43A8 /* TimeDepositTests */,
+				75C903DF2C4291D800EF43A8 /* TimeDepositUITests */,
+				75C903BD2C4291D600EF43A8 /* Products */,
+				8ECB0FB408CD75931642BC4F /* Pods */,
+				183D5848BAA138CCA77A64EE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		75C903BD2C4291D600EF43A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75C903BC2C4291D600EF43A8 /* TimeDeposit.app */,
+				75C903D22C4291D800EF43A8 /* TimeDepositTests.xctest */,
+				75C903DC2C4291D800EF43A8 /* TimeDepositUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75C903BE2C4291D600EF43A8 /* TimeDeposit */ = {
+			isa = PBXGroup;
+			children = (
+				75EBCDA42C43E93B0052D5F4 /* Components */,
+				75C155E62C43C9D100010E44 /* Helpers */,
+				75C904272C429B2C00EF43A8 /* Model */,
+				75C904222C4298FB00EF43A8 /* Service */,
+				75C904212C4298E600EF43A8 /* Coordinator */,
+				75C903FA2C42964A00EF43A8 /* Extensions */,
+				75C903F62C42952A00EF43A8 /* Screens */,
+				75C903EF2C42947300EF43A8 /* Core */,
+				75C903BF2C4291D600EF43A8 /* AppDelegate.swift */,
+				75C903C12C4291D600EF43A8 /* SceneDelegate.swift */,
+				75C903C82C4291D800EF43A8 /* Assets.xcassets */,
+				75C903CD2C4291D800EF43A8 /* Info.plist */,
+				75C904172C4296EE00EF43A8 /* Network */,
+			);
+			path = TimeDeposit;
+			sourceTree = "<group>";
+		};
+		75C903D52C4291D800EF43A8 /* TimeDepositTests */ = {
+			isa = PBXGroup;
+			children = (
+				75C903D62C4291D800EF43A8 /* TimeDepositTests.swift */,
+			);
+			path = TimeDepositTests;
+			sourceTree = "<group>";
+		};
+		75C903DF2C4291D800EF43A8 /* TimeDepositUITests */ = {
+			isa = PBXGroup;
+			children = (
+				75C903E02C4291D800EF43A8 /* TimeDepositUITests.swift */,
+				75C903E22C4291D800EF43A8 /* TimeDepositUITestsLaunchTests.swift */,
+			);
+			path = TimeDepositUITests;
+			sourceTree = "<group>";
+		};
+		75C903EF2C42947300EF43A8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				75C903F02C42948000EF43A8 /* Router.swift */,
+				75C903F22C42948A00EF43A8 /* Coordinator.swift */,
+				75C903F42C42949E00EF43A8 /* Screen.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		75C903F62C42952A00EF43A8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				75C9042C2C42FCA800EF43A8 /* Payment */,
+				75C903F72C42955200EF43A8 /* Product */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		75C903F72C42955200EF43A8 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				75C9041F2C42974600EF43A8 /* ProductAPI.swift */,
+				75C903C32C4291D600EF43A8 /* ProductViewController.swift */,
+				75C903F82C42956D00EF43A8 /* ProductViewModel.swift */,
+				75C904252C429A5000EF43A8 /* ProductScreen.swift */,
+				75C9042F2C42FE5900EF43A8 /* ProductDetailScreen.swift */,
+				75C904312C4300DC00EF43A8 /* ProductDetailViewModel.swift */,
+				75C904332C4304D700EF43A8 /* ProductDetailViewController.swift */,
+				75C155E92C43CC9F00010E44 /* ProductCell.swift */,
+				75C3F6B92C45912000E17E88 /* RolloverOptionCell.swift */,
+				75CC418A2C4BEFA100FC3D91 /* AmountCell.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		75C903FA2C42964A00EF43A8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				75C903FB2C42967700EF43A8 /* UIView+Extension.swift */,
+				75C155E42C43C75000010E44 /* UIColor+Extension.swift */,
+				75BF9CA32C44BD7300971BCD /* String+Extension.swift */,
+				75C3F6B52C45668100E17E88 /* Date+Extension.swift */,
+				75C3F6BD2C47755D00E17E88 /* Array+Extension.swift */,
+				759AA6F82C48F3CD00E57BD2 /* UIImage+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		75C904112C4296EE00EF43A8 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				75C9040E2C4296EE00EF43A8 /* APIClientProtocol.swift */,
+				75C9040F2C4296EE00EF43A8 /* APIDataProtocol.swift */,
+				75C904102C4296EE00EF43A8 /* NetworkManagerProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		75C904132C4296EE00EF43A8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				75C904112C4296EE00EF43A8 /* Protocol */,
+				75C904122C4296EE00EF43A8 /* NetworkConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		75C904172C4296EE00EF43A8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				75C904132C4296EE00EF43A8 /* Config */,
+				75C904142C4296EE00EF43A8 /* APIClient.swift */,
+				75C904152C4296EE00EF43A8 /* NetworkError.swift */,
+				75C904162C4296EE00EF43A8 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		75C904212C4298E600EF43A8 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				75C904232C42991400EF43A8 /* ProductCoordinator.swift */,
+				759AA6FA2C492B6E00E57BD2 /* PaymentCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		75C904222C4298FB00EF43A8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				75C9042A2C429BF100EF43A8 /* ProductService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		75C904272C429B2C00EF43A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75C904282C429B3C00EF43A8 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		75C9042C2C42FCA800EF43A8 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				75C9042D2C42FCC200EF43A8 /* PaymentViewController.swift */,
+				75F8D4902C4D984100524994 /* PaymentOptionCell.swift */,
+				75C904352C43065500EF43A8 /* PaymentScreen.swift */,
+				75F8D4922C4DAC3900524994 /* PaymentSectionHeaderCell.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		75EBCDA42C43E93B0052D5F4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				75EBCDA72C443F8D0052D5F4 /* SeparatorLine.swift */,
+				75C3F6B72C4589BE00E17E88 /* Sheet.swift */,
+				75CC41882C4BE56000FC3D91 /* Toast.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8ECB0FB408CD75931642BC4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				574EB428AD92F9E5DD6C845D /* Pods-TimeDeposit.debug.xcconfig */,
+				9773BE57C7CC84528BEBEF3B /* Pods-TimeDeposit.release.xcconfig */,
+				65975BBD14B938B6080C2DC1 /* Pods-TimeDeposit-TimeDepositUITests.debug.xcconfig */,
+				AF7920F232E53ADFF9D9225E /* Pods-TimeDeposit-TimeDepositUITests.release.xcconfig */,
+				ACE460CF18B757AAFF022C72 /* Pods-TimeDepositTests.debug.xcconfig */,
+				07EA4C5540FE149A69C7FB5E /* Pods-TimeDepositTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75C903BB2C4291D600EF43A8 /* TimeDeposit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75C903E62C4291D800EF43A8 /* Build configuration list for PBXNativeTarget "TimeDeposit" */;
+			buildPhases = (
+				4C867EC570CDD11E01EA983E /* [CP] Check Pods Manifest.lock */,
+				75C903B82C4291D600EF43A8 /* Sources */,
+				75C903B92C4291D600EF43A8 /* Frameworks */,
+				75C903BA2C4291D600EF43A8 /* Resources */,
+				BACB5200A5398A027ACF3941 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeDeposit;
+			productName = TimeDeposit;
+			productReference = 75C903BC2C4291D600EF43A8 /* TimeDeposit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75C903D12C4291D800EF43A8 /* TimeDepositTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75C903E92C4291D800EF43A8 /* Build configuration list for PBXNativeTarget "TimeDepositTests" */;
+			buildPhases = (
+				445E7D37CEFE5AC7191748D4 /* [CP] Check Pods Manifest.lock */,
+				75C903CE2C4291D800EF43A8 /* Sources */,
+				75C903CF2C4291D800EF43A8 /* Frameworks */,
+				75C903D02C4291D800EF43A8 /* Resources */,
+				C318437AF787C339A4ABF9BE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75C903D42C4291D800EF43A8 /* PBXTargetDependency */,
+			);
+			name = TimeDepositTests;
+			productName = TimeDepositTests;
+			productReference = 75C903D22C4291D800EF43A8 /* TimeDepositTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		75C903DB2C4291D800EF43A8 /* TimeDepositUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75C903EC2C4291D800EF43A8 /* Build configuration list for PBXNativeTarget "TimeDepositUITests" */;
+			buildPhases = (
+				7D66FADCBAA571192547608D /* [CP] Check Pods Manifest.lock */,
+				75C903D82C4291D800EF43A8 /* Sources */,
+				75C903D92C4291D800EF43A8 /* Frameworks */,
+				75C903DA2C4291D800EF43A8 /* Resources */,
+				19B0FEBB03B8E6FDE7BD25AD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75C903DE2C4291D800EF43A8 /* PBXTargetDependency */,
+			);
+			name = TimeDepositUITests;
+			productName = TimeDepositUITests;
+			productReference = 75C903DC2C4291D800EF43A8 /* TimeDepositUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75C903B42C4291D600EF43A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					75C903BB2C4291D600EF43A8 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					75C903D12C4291D800EF43A8 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 75C903BB2C4291D600EF43A8;
+					};
+					75C903DB2C4291D800EF43A8 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 75C903BB2C4291D600EF43A8;
+					};
+				};
+			};
+			buildConfigurationList = 75C903B72C4291D600EF43A8 /* Build configuration list for PBXProject "TimeDeposit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75C903B32C4291D600EF43A8;
+			productRefGroup = 75C903BD2C4291D600EF43A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75C903BB2C4291D600EF43A8 /* TimeDeposit */,
+				75C903D12C4291D800EF43A8 /* TimeDepositTests */,
+				75C903DB2C4291D800EF43A8 /* TimeDepositUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75C903BA2C4291D600EF43A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C903C92C4291D800EF43A8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C903D02C4291D800EF43A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C903DA2C4291D800EF43A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19B0FEBB03B8E6FDE7BD25AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeDeposit-TimeDepositUITests/Pods-TimeDeposit-TimeDepositUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeDeposit-TimeDepositUITests/Pods-TimeDeposit-TimeDepositUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeDeposit-TimeDepositUITests/Pods-TimeDeposit-TimeDepositUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		445E7D37CEFE5AC7191748D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeDepositTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C867EC570CDD11E01EA983E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeDeposit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D66FADCBAA571192547608D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeDeposit-TimeDepositUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BACB5200A5398A027ACF3941 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeDeposit/Pods-TimeDeposit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeDeposit/Pods-TimeDeposit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeDeposit/Pods-TimeDeposit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C318437AF787C339A4ABF9BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeDepositTests/Pods-TimeDepositTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TimeDepositTests/Pods-TimeDepositTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TimeDepositTests/Pods-TimeDepositTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75C903B82C4291D600EF43A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CC41892C4BE56000FC3D91 /* Toast.swift in Sources */,
+				75C9041A2C4296EE00EF43A8 /* NetworkManagerProtocol.swift in Sources */,
+				759AA6FB2C492B6E00E57BD2 /* PaymentCoordinator.swift in Sources */,
+				75C904362C43065500EF43A8 /* PaymentScreen.swift in Sources */,
+				75C9041D2C4296EE00EF43A8 /* NetworkError.swift in Sources */,
+				759AA6F92C48F3CD00E57BD2 /* UIImage+Extension.swift in Sources */,
+				75C904262C429A5000EF43A8 /* ProductScreen.swift in Sources */,
+				75C903F12C42948000EF43A8 /* Router.swift in Sources */,
+				75C3F6BA2C45912000E17E88 /* RolloverOptionCell.swift in Sources */,
+				75C155EA2C43CC9F00010E44 /* ProductCell.swift in Sources */,
+				75C3F6B82C4589BE00E17E88 /* Sheet.swift in Sources */,
+				75C904292C429B3C00EF43A8 /* Product.swift in Sources */,
+				75BF9CA42C44BD7300971BCD /* String+Extension.swift in Sources */,
+				75C904342C4304D700EF43A8 /* ProductDetailViewController.swift in Sources */,
+				75C3F6BE2C47755D00E17E88 /* Array+Extension.swift in Sources */,
+				75C9041B2C4296EE00EF43A8 /* NetworkConfig.swift in Sources */,
+				75C903C42C4291D600EF43A8 /* ProductViewController.swift in Sources */,
+				75C9042E2C42FCC200EF43A8 /* PaymentViewController.swift in Sources */,
+				75C155E82C43C9E400010E44 /* ViewHelper.swift in Sources */,
+				75C904182C4296EE00EF43A8 /* APIClientProtocol.swift in Sources */,
+				75EBCDA82C443F8D0052D5F4 /* SeparatorLine.swift in Sources */,
+				75C903FC2C42967700EF43A8 /* UIView+Extension.swift in Sources */,
+				75CC418B2C4BEFA100FC3D91 /* AmountCell.swift in Sources */,
+				75C9042B2C429BF100EF43A8 /* ProductService.swift in Sources */,
+				75C903F32C42948A00EF43A8 /* Coordinator.swift in Sources */,
+				75C903F92C42956D00EF43A8 /* ProductViewModel.swift in Sources */,
+				75C904242C42991400EF43A8 /* ProductCoordinator.swift in Sources */,
+				75C3F6B62C45668100E17E88 /* Date+Extension.swift in Sources */,
+				75C904192C4296EE00EF43A8 /* APIDataProtocol.swift in Sources */,
+				75F8D4932C4DAC3900524994 /* PaymentSectionHeaderCell.swift in Sources */,
+				75C9041C2C4296EE00EF43A8 /* APIClient.swift in Sources */,
+				75C904302C42FE5900EF43A8 /* ProductDetailScreen.swift in Sources */,
+				75C904322C4300DC00EF43A8 /* ProductDetailViewModel.swift in Sources */,
+				75C903C02C4291D600EF43A8 /* AppDelegate.swift in Sources */,
+				75C9041E2C4296EE00EF43A8 /* NetworkManager.swift in Sources */,
+				75C903C22C4291D600EF43A8 /* SceneDelegate.swift in Sources */,
+				75C155E52C43C75000010E44 /* UIColor+Extension.swift in Sources */,
+				75F8D4912C4D984100524994 /* PaymentOptionCell.swift in Sources */,
+				75C903F52C42949E00EF43A8 /* Screen.swift in Sources */,
+				75C904202C42974600EF43A8 /* ProductAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C903CE2C4291D800EF43A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C903D72C4291D800EF43A8 /* TimeDepositTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C903D82C4291D800EF43A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C903E32C4291D800EF43A8 /* TimeDepositUITestsLaunchTests.swift in Sources */,
+				75C903E12C4291D800EF43A8 /* TimeDepositUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75C903D42C4291D800EF43A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75C903BB2C4291D600EF43A8 /* TimeDeposit */;
+			targetProxy = 75C903D32C4291D800EF43A8 /* PBXContainerItemProxy */;
+		};
+		75C903DE2C4291D800EF43A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75C903BB2C4291D600EF43A8 /* TimeDeposit */;
+			targetProxy = 75C903DD2C4291D800EF43A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		75C903E42C4291D800EF43A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75C903E52C4291D800EF43A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75C903E72C4291D800EF43A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 574EB428AD92F9E5DD6C845D /* Pods-TimeDeposit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UP3K5RM49Z;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeDeposit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = galih.TimeDeposit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75C903E82C4291D800EF43A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9773BE57C7CC84528BEBEF3B /* Pods-TimeDeposit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UP3K5RM49Z;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeDeposit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = galih.TimeDeposit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		75C903EA2C4291D800EF43A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACE460CF18B757AAFF022C72 /* Pods-TimeDepositTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UP3K5RM49Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = galih.TimeDepositTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeDeposit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimeDeposit";
+			};
+			name = Debug;
+		};
+		75C903EB2C4291D800EF43A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07EA4C5540FE149A69C7FB5E /* Pods-TimeDepositTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UP3K5RM49Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = galih.TimeDepositTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeDeposit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TimeDeposit";
+			};
+			name = Release;
+		};
+		75C903ED2C4291D800EF43A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65975BBD14B938B6080C2DC1 /* Pods-TimeDeposit-TimeDepositUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UP3K5RM49Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = galih.TimeDepositUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimeDeposit;
+			};
+			name = Debug;
+		};
+		75C903EE2C4291D800EF43A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF7920F232E53ADFF9D9225E /* Pods-TimeDeposit-TimeDepositUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UP3K5RM49Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = galih.TimeDepositUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimeDeposit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75C903B72C4291D600EF43A8 /* Build configuration list for PBXProject "TimeDeposit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75C903E42C4291D800EF43A8 /* Debug */,
+				75C903E52C4291D800EF43A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75C903E62C4291D800EF43A8 /* Build configuration list for PBXNativeTarget "TimeDeposit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75C903E72C4291D800EF43A8 /* Debug */,
+				75C903E82C4291D800EF43A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75C903E92C4291D800EF43A8 /* Build configuration list for PBXNativeTarget "TimeDepositTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75C903EA2C4291D800EF43A8 /* Debug */,
+				75C903EB2C4291D800EF43A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75C903EC2C4291D800EF43A8 /* Build configuration list for PBXNativeTarget "TimeDepositUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75C903ED2C4291D800EF43A8 /* Debug */,
+				75C903EE2C4291D800EF43A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75C903B42C4291D600EF43A8 /* Project object */;
+}

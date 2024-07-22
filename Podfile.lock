@@ -1,0 +1,48 @@
+PODS:
+  - CwlCatchException (2.2.0):
+    - CwlCatchExceptionSupport (~> 2.2.0)
+  - CwlCatchExceptionSupport (2.2.0)
+  - CwlMachBadInstructionHandler (2.2.0)
+  - CwlPosixPreconditionTesting (2.2.0)
+  - CwlPreconditionTesting (2.2.1):
+    - CwlCatchException (~> 2.2.0)
+    - CwlMachBadInstructionHandler (~> 2.2.0)
+    - CwlPosixPreconditionTesting (~> 2.2.0)
+  - DLRadioButton (1.4.12)
+  - Nimble (13.3.0):
+    - CwlPreconditionTesting (~> 2.2.0)
+  - PKHUD (5.3.0)
+  - Quick (7.6.1)
+
+DEPENDENCIES:
+  - DLRadioButton (~> 1.4)
+  - Nimble
+  - PKHUD (~> 5.0)
+  - Quick
+
+SPEC REPOS:
+  trunk:
+    - CwlCatchException
+    - CwlCatchExceptionSupport
+    - CwlMachBadInstructionHandler
+    - CwlPosixPreconditionTesting
+    - CwlPreconditionTesting
+    - DLRadioButton
+    - Nimble
+    - PKHUD
+    - Quick
+
+SPEC CHECKSUMS:
+  CwlCatchException: 51bf8319009a31104ea6f0568730d1ecc25b6454
+  CwlCatchExceptionSupport: 1345d6adb01a505933f2bc972dab60dcb9ce3e50
+  CwlMachBadInstructionHandler: ea1030428925d9bf340882522af30712fb4bf356
+  CwlPosixPreconditionTesting: a125dee731883f2582715f548c6b6c92c7fde145
+  CwlPreconditionTesting: ccfd08aca58d14e04062b2a3dd2fd52e09857453
+  DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
+  Nimble: 3ac6c6b0b7e9835d1540b6507d8054b12a415536
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
+  Quick: 6c8ab60851c347b645e5d8bf17df20b303276844
+
+PODFILE CHECKSUM: 1cb6aa2cc2fd3d7e1e4151c075288fb46d8235e2
+
+COCOAPODS: 1.15.2
